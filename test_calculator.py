@@ -26,7 +26,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(0, 4), 0)
 
     def test_multipy2(self):
-        self.assertEqual(self.calc.multiply(3, 2), 6)
+        self.assertEqual(self.calc.multiply(3, -2), -6)
 
     def test_divide1(self):
         self.assertEqual(self.calc.divide(10, 5), 2)
@@ -40,7 +40,6 @@ class TestCalculator(unittest.TestCase):
     def test_modulo2(self):
         self.assertEqual(self.calc.modulo(12, 5), 2)
     
-
 
 if __name__ == '__main__':
     unittest.main()
